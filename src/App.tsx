@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Head from "./components/Head";
-import Top from "./components/Top";
-import Profile from "./components/Profile";
-import About from "./components/About";
-import Skill from "./components/Skill";
-import { Contact } from "./components/Contact";
+import Head from "./components/Head/Head";
+import Top from "./components/Top/Top";
+import Profile from "./components/Main/Profile";
+import About from "./components/Main/About";
+import Skill from "./components/Main/Skill";
+import { Contact } from "./components/Contact/Contact";
 
 function App() {
   return (
