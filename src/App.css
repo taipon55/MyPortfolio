@@ -13,6 +13,7 @@ ul {
 li {
   margin: 15px 15px 0px 0px;
   list-style: none;
+  cursor: pointer;
 }
 
 .top-photo {

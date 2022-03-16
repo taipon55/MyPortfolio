@@ -6,6 +6,7 @@ export const Profile = () => {
   const text2 = "React/Next.js/TypeScript";
   return (
     <>
+      <section id="concept">...</section>
       <h2 className="content-title">About me</h2>
 
       <div className="container">

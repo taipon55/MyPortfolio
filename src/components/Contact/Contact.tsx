@@ -4,6 +4,8 @@ import Button from "../Button/Button";
 export const Contact = () => {
   return (
     <>
+      <section id="contact">...</section>
+
       <div className="contact-photo">
         <div className="bg_dark"></div>
 

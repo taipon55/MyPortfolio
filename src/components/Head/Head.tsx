@@ -1,5 +1,5 @@
 import React from "react";
-import scss from "./header.module.scss";
+import { Link as Scroll } from "react-scroll";
 
 function Head() {
   return (
@@ -8,13 +8,19 @@ function Head() {
         <h1>My Portfolio</h1>
         <ul>
           <li>
-            <a href="#">ABOUT</a>
+            <Scroll to="about" smooth={true}>
+              ABOUT
+            </Scroll>
           </li>
           <li>
-            <a href="#">PORTFOLIO</a>
+            <Scroll to="portfolio" smooth={true}>
+              PORTFOLIO
+            </Scroll>
           </li>
           <li>
-            <a href="#">CONTACT</a>
+            <Scroll to="contact" smooth={true}>
+              CONTACT
+            </Scroll>
           </li>
         </ul>
       </header>
