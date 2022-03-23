@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
-import Head from "./components/Head/Head";
-import Top from "./components/Top/Top";
-import Profile from "./components/Main/Profile";
-import Portfolio from "./components/Portfolio/portfolio";
-import { Contact } from "./components/Contact/Contact";
+import Head from "./components/Head";
+import Top from "./components/Top";
+import Profile from "./components/Profile";
+import Portfolio from "./components/portfolio";
+import { Contact } from "./components/Contact";
 
 function App() {
   return (
