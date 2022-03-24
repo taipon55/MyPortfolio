@@ -2,11 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 export const Profile = () => {
-  const text = "HTML / CSS / JavaScript";
-  const text2 = "React/Next.js/TypeScript";
   return (
     <>
-      <section id="concept">...</section>
       <h2 className="content-title">About me</h2>
 
       <div className="container">

@@ -1,9 +1,9 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 
 export const Production = () => {
   return (
     <div>
-      <section id="portfolio">...</section>
 
       <h1 className="content-title">Port Forio</h1>
       <div className="portfolio-container">
