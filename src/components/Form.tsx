@@ -1,5 +1,12 @@
-import React from "react";
+import React from 'react'
+import { init, send } from "emailjs-com";
 
-export const ContactForml = () => {
-  return <div></div>;
-};
+function Form() {
+  return (
+    <div>
+      <h2>お問い合わせ</h2>
+    </div>
+  )
+}
+
+export default Form
