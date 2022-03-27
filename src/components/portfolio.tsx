@@ -5,7 +5,7 @@ export const Production = () => {
   return (
     <div>
 
-      <h1 className="content-title">Port Forio</h1>
+      <h1 className="content-title">Port Folio</h1>
       <div className="portfolio-container">
         <div className="portfolio-block">
           <img

@@ -1,20 +1,20 @@
 import React from "react";
-import "./App.css";
-import Head from "./components/Head";
-import Top from "./components/Top";
-import Profile from "./components/Profile";
-import Portfolio from "./components/portfolio";
-import { Contact } from "./components/Contact";
+import "./App.css"
+import { BrowserRouter as Router, Routes, Route,  } from "react-router-dom";
+import Home from "./components/Home";
+import Form from "./components/Form";
+
 
 function App() {
   return (
-    <div className="App">
-      <Head />
-      <Top />
-      <Profile />
-      <Portfolio />
-      <Contact />
-    </div>
+    <Router>
+       <div className="App">
+      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Form" element={<Form />} />
+      </Routes>
+    </Router>
   );
 }
 
