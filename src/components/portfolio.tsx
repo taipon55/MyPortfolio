@@ -12,7 +12,7 @@ export const Production = () => {
             className="portfolio-photo"
             src={`${process.env.PUBLIC_URL}/MyPortfolio.png`}
           />
-          <p>aaaaaaaaa</p>
+          <p>紹介したぺーじです</p>
         </div>
         <div className="portfolio-block">
           <img
