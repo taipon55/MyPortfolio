@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import { init, send } from "@emailjs/browser";
 
+
+
   const Form = () => {
   const [username, setUserName] = useState('');
   const [company ,setCompany] = useState('');
@@ -42,8 +44,7 @@ import { init, send } from "@emailjs/browser";
       const handleClick = (e: { preventDefault: () => void; }) =>{
         e.preventDefault();
          sendMail();
-      }
-
+      };
 
        const handleCanceled = () => {
          setUserName('');
@@ -51,11 +52,11 @@ import { init, send } from "@emailjs/browser";
          setMail('');
          setMessage('');
          setTitle('');
-       }
+       };
 
        const disableSend = username === '' || mail === '' || title === '' || message === '';
 
-
+       
   return (
     <div>
       <h2>お問い合わせ</h2>
