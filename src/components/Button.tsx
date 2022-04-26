@@ -6,9 +6,12 @@ export const Button = () => {
   let navigate = useNavigate();
   return (
     <>
-      <div className="btn-position" onClick={() =>{
-        navigate("/form");
-      }}>
+      <div
+        className="btn-position"
+        onClick={() => {
+          navigate("/form");
+        }}
+      >
         <a href="" className="btn btn-flat">
           <span>CONTACT</span>
         </a>

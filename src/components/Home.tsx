@@ -5,7 +5,6 @@ import Profile from "./Profile";
 import Portfolio from "./portfolio";
 import { Contact } from "./Contact";
 
-
 function Home() {
   return (
     <div className="App">
@@ -14,7 +13,7 @@ function Home() {
       <Profile />
       <Portfolio />
       <Contact />
-      </div>
+    </div>
   );
 }
 

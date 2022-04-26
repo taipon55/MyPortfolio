@@ -5,7 +5,7 @@ function Head() {
   return (
     <div>
       <header>
-         <h1>My Portfolio</h1>
+        <h1>My Portfolio</h1>
 
         <ul>
           <li>
