@@ -6,7 +6,6 @@ export const Contact = () => {
     <>
       <div className="contact-photo">
         <div className="bg_dark"></div>
-
         <div className="contact-main">
           <h1 className="contact-title">Contact</h1>
           <p className="contact-text">お問い合わせはこちらからお願いします。</p>
