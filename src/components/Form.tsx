@@ -1,57 +1,36 @@
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import { init, send } from "@emailjs/browser";
 
 const Form = () => {
-  const [username, setUserName] = useState("");
-  const [company, setCompany] = useState("");
-  const [mail, setMail] = useState("");
-  const [title, setTitle] = useState("");
-  const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [content, setContent] = useState("");
 
-  const sendMail = () => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
     const userID = process.env.REACT_APP_USER_ID;
     const serviceID = process.env.REACT_APP_SERVICE_ID;
     const templateID = process.env.REACT_APP_TEMPLATE_ID;
-    if (
-      userID !== undefined &&
-      serviceID !== undefined &&
-      templateID !== undefined
-    ) {
+
+    if (userID && serviceID && templateID) {
       init(userID);
-      const template_param = {
-        to_username: username,
-        company: company,
-        from_email: mail,
-        title: title,
-        message: message,
+      const params = {
+        from_name: name,
+        email: email,
+        content: content,
       };
 
-      send(serviceID, templateID, template_param).then(() => {
-        window.alert("お問い合わせを送信いたしました。");
-        setUserName("");
-        setCompany("");
-        setMail("");
-        setMessage("");
-        setTitle("");
-      });
+      try {
+        await send(serviceID, templateID, params);
+        alert("送信成功");
+      } catch (error) {
+        alert(error);
+      }
     }
   };
-  const handleClick = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    sendMail();
-  };
 
-  const handleCanceled = () => {
-    setUserName("");
-    setCompany("");
-    setMail("");
-    setMessage("");
-    setTitle("");
-  };
-
-  const disableSend =
-    username === "" || mail === "" || title === "" || message === "";
-
+  const disableSend = name === "" || email === "" || content === "";
   return (
     <div className="form-photo">
       <div className="form-main">
@@ -59,71 +38,41 @@ const Form = () => {
         <p className="form-text">
           お問い合わせは、下記のフォームからお願いします。
         </p>
-        <form className="form-input">
+        <form className="form-input" onSubmit={(e) => onSubmit(e)}>
           <div className="form-group">
             <input
+              id="name"
               type="text"
-              id="nameForm"
               placeholder="name"
               className="formInput"
-              value={username}
-              onChange={(e) => setUserName(e.target.value)}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
 
           <div className="form-group">
             <input
+              id="email"
               type="text"
-              id="companyNameForm"
-              placeholder="company"
-              className="formInput"
-              value={company}
-              onChange={(e) => setCompany(e.target.value)}
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <input
-              type="email"
-              id="mailForm"
               placeholder="mail"
               className="formInput"
-              value={mail}
-              onChange={(e) => setMail(e.target.value)}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
           <div className="form-group">
-            <input
-              type="text"
-              id="mailTitleForm"
-              placeholder="title"
-              className="formInput"
-              value={title}
-              onChange={(e) => setTitle(e.target.value)}
-            />
-          </div>
-          <div className="form-group">
             <textarea
-              id="mailContentForm"
+              id="content"
               placeholder="message"
               className="formInput"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              rows={5}
+              value={content}
+              onChange={(e) => setContent(e.target.value)}
             />
           </div>
           <div className="btns">
             <div>
-              <button onClick={handleClick} disabled={disableSend}>
-                <strong>お問い合わせを送信する</strong>
-              </button>
-            </div>
-            <div>
-              <button onClick={handleCanceled}>
-                <strong>キャンセル</strong>
-              </button>
+              <input type="submit" disabled={disableSend} />
             </div>
           </div>
         </form>
