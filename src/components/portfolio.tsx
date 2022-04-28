@@ -7,18 +7,22 @@ export const Production = () => {
       <h1 className="content-title">Port Folio</h1>
       <div className="portfolio-container">
         <div className="portfolio-block">
-          <img
-            className="portfolio-photo"
-            src={`${process.env.PUBLIC_URL}/MyPortfolio.png`}
-          />
-          <p>紹介したぺーじです</p>
+          <a className="portfolio-link" href="#">
+            <img
+              className="portfolio-photo"
+              src={`${process.env.PUBLIC_URL}/MyPortfolio.png`}
+            />
+            <p>MyPortfolio</p>
+          </a>
         </div>
         <div className="portfolio-block">
-          <img
-            className="portfolio-photo2"
-            src={`${process.env.PUBLIC_URL}/Whits-House.png`}
-          />
-          <p>aaaaaaaaa</p>
+          <a className="portfolio-link" href="https://whits-house.com/">
+            <img
+              className="portfolio-photo2"
+              src={`${process.env.PUBLIC_URL}/Whits-House.png`}
+            />
+            <p>Whits-House</p>
+          </a>
         </div>
       </div>
     </div>
