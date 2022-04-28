@@ -153,9 +153,13 @@ a.btn-flat:hover:before {
   text-align: center;
 }
 
+.portfolio-link {
+  text-decoration: none;
+}
+
 /* contact */
 .contact-photo {
-  background-image: url(../public/tree.jpg);
+  background-image: url(../public/tree-house.jpg);
   height: 100vh;
   background-size: cover;
   position: relative;
@@ -174,4 +178,39 @@ a.btn-flat:hover:before {
 
 .contact-text {
   font-size: 20px;
+}
+
+/* form */
+.form-photo {
+  background-image: url(../public//form-photo.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+.form-title {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  font: 300 60px "Oswald", sans-serif;
+  letter-spacing: 6px;
+}
+.form-text {
+  text-align: center;
+  font-size: 20px;
+}
+input {
+  width: 25%;
+  height: 30px;
+  border-width: 3px;
+}
+textarea {
+  width: 25%;
+  height: 150px;
+  border-width: 3px;
+}
+.form-input {
+  margin-top: 80px;
+  text-align: center;
+}
+.form-group {
+  margin-top: 30px;
 }
