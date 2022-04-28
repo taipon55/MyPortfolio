@@ -27,7 +27,10 @@ export const Profile = () => {
             よろしくお願いいたします。
           </p>
           <div className="git-icon">
-            <a className="a-icon" href="#">
+            <a
+              className="a-icon"
+              href="https://github.com/taipon55/Myportfolio"
+            >
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
