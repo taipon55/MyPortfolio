@@ -7,7 +7,10 @@ export const Production = () => {
       <h1 className="content-title">Port Folio</h1>
       <div className="portfolio-container">
         <div className="portfolio-block">
-          <a className="portfolio-link" href="#">
+          <a
+            className="portfolio-link"
+            href="https://portfolio.whits-house.com//"
+          >
             <img
               className="portfolio-photo"
               src={`${process.env.PUBLIC_URL}/MyPortfolio.png`}
