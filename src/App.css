@@ -32,7 +32,7 @@ li {
 .top-container {
   position: absolute;
   color: white;
-  font-size: 60px;
+  font-size: 45px;
   left: 50%;
   top: 40%;
 }
@@ -138,19 +138,24 @@ a.btn-flat:hover:before {
 /* portfolio */
 
 .portfolio-photo {
-  width: 600px;
+  width: 100%;
 }
 .portfolio-photo2 {
-  width: 600px;
+  width: 100%;
 }
 
 .portfolio-container {
   display: flex;
+  margin: 20px;
+}
+.portfolio-container p {
+  font-size: 20px;
 }
 
 .portfolio-block {
   margin: 0 auto;
   text-align: center;
+  margin-right: 20px;
 }
 
 .portfolio-link {
@@ -213,4 +218,52 @@ textarea {
 }
 .form-group {
   margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .top-container {
+    left: 26%;
+  }
+  .top-container h1 {
+    font-size: 1.6em;
+  }
+  .container {
+    margin: ４0px;
+  }
+}
+
+@media (max-width: 599px) {
+  .top-container h1 {
+    font-size: 1.2em;
+  }
+  .content-title {
+    font-size: 60px;
+  }
+  .container {
+    display: block;
+  }
+
+  .profile {
+    height: 300px;
+  }
+  .profile-photo {
+    margin-left: 25%;
+  }
+  .about {
+    text-align: center;
+    height: 250px;
+  }
+  .about-text {
+    font-size: 18px;
+  }
+  .portfolio-container {
+    display: block;
+  }
+  .portfolio-block {
+    margin-bottom: 30px;
+  }
+  .contact-title {
+    font-size: 60px;
+    text-align: center;
+  }
 }
