@@ -211,6 +211,7 @@ textarea {
   width: 25%;
   height: 150px;
   border-width: 3px;
+  margin-bottom: 50px;
 }
 .form-input {
   margin-top: 80px;
@@ -220,6 +221,7 @@ textarea {
   margin-top: 30px;
 }
 
+/* Homeレスポンシブ */
 @media (max-width: 1024px) {
   .top-container {
     left: 26%;
@@ -265,5 +267,26 @@ textarea {
   .contact-title {
     font-size: 60px;
     text-align: center;
+  }
+}
+
+/* Formレスポンシブ */
+@media (max-width: 1024px) {
+  input {
+    width: 30%;
+  }
+  textarea {
+    width: 30%;
+  }
+}
+@media (max-width: 599px) {
+  input {
+    width: 40%;
+  }
+  textarea {
+    width: 40%;
+  }
+  .form-text {
+    font-size: 18px;
   }
 }
