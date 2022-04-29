@@ -9,7 +9,7 @@ function Head() {
 
         <ul>
           <li>
-            <Scroll to="about" smooth={true}>
+            <Scroll to="content-title" smooth={true}>
               ABOUT
             </Scroll>
           </li>
@@ -19,7 +19,7 @@ function Head() {
             </Scroll>
           </li>
           <li>
-            <Scroll to="contact" smooth={true}>
+            <Scroll to="contact-photo" smooth={true}>
               CONTACT
             </Scroll>
           </li>
