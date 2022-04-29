@@ -20,7 +20,7 @@ export const Profile = () => {
           <p className="about-text">
             初めまして！
             <br />
-            Webエンジニアを目指して日々学習している白方大成と申します。
+            フロントエンジニアを目指している白方大成と申します。
             <br />
             現在は主にreact,typescritpを学習しております。
             <br />
