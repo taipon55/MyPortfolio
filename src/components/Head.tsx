@@ -11,8 +11,12 @@ function Head() {
   return (
     <div>
       <header>
-        <h1>My Portfolio</h1>
-        <div className={active === true ? "navArea" : "open"}>
+        <a href="https://portfolio.whits-house.com/">
+          {" "}
+          <h1>My Portfolio</h1>
+        </a>
+
+        <div className={active === false ? "navArea" : "open"}>
           <nav>
             <div className="inner">
               <ul>

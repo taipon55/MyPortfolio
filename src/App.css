@@ -6,6 +6,10 @@ header {
   justify-content: space-around;
   background-color: white;
 }
+header a {
+  text-decoration: none;
+  color: #000;
+}
 nav {
   display: block;
   position: fixed;
@@ -245,6 +249,7 @@ a.btn-flat:hover:before {
 
 .portfolio-link {
   text-decoration: none;
+  color: #000;
 }
 
 /* contact */
@@ -305,7 +310,11 @@ textarea {
 .form-group {
   margin-top: 30px;
 }
-
+button {
+  margin-top: 80px;
+  width: 25%;
+  border-width: 3px;
+}
 /* Homeレスポンシブ */
 @media (max-width: 1024px) {
   .top-container {
