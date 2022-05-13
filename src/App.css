@@ -315,6 +315,7 @@ button {
   width: 25%;
   border-width: 3px;
 }
+
 /* Homeレスポンシブ */
 @media (max-width: 1024px) {
   .top-container {

@@ -1,5 +1,6 @@
 import React, { FormEvent, useState } from "react";
 import { init, send } from "@emailjs/browser";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -74,6 +75,11 @@ const Form = () => {
             <div>
               <input type="submit" disabled={disableSend} />
             </div>
+          </div>
+          <div className="form-group">
+            <Link to="/">
+              <span>戻る</span>
+            </Link>
           </div>
         </form>
       </div>
