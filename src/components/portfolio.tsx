@@ -9,7 +9,7 @@ export const Production = () => {
         <div className="portfolio-block">
           <a
             className="portfolio-link"
-            href="https://portfolio.whits-house.com//"
+            href="http://myportfolios.s3-website.ap-northeast-3.amazonaws.com/"
           >
             <img
               className="portfolio-photo"
